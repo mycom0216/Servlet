@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- Servlet으로 요청 데이터 전송하기 -->
+
+	<!-- 
+		form : 입력형식을 지정하는 태그 
+		**Server데이터를 전송하기 위해서는 반드시 form 태그를 활용해야한다!!
+		**form 태그 안쪽에 있는 데이터만 전송가능하다.
+	-->
+	<form action="DataSend">
+		<input type ="text" name = "data">
+		<input type ="submit">
+	
+	
+	
+	</form>
+	<!-- 
+		데이터 전송의 3가지 규칙
+		1) 어디로 보낼건지(어떤 Servlet으로 보낼 건지)
+		: action 속성 사용하여 지정!(Servlet의 urlmapping 확인하기)
+		2) 어떤 값을 보낼건지
+		: name 속성 사용하여 지정!(이름표를 달아준다..!)
+		3) 언제(어느 시점에) 보낼건지
+		: input submit 버튼을 클릭했을 때 전송 
+	 -->
+
+
+
+
+
+
+
+</body>
+</html>

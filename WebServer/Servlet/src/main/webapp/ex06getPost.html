@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- 데이터 전송방식
+	form태그의 method attribute를 사용해서 지정할 수 있다.
+	method attribute의 기본값은 get 방식이다!
+	1) Get방식
+	: URL에 데이터를 포함시켜서 요청
+	: 보안에 취약(캐싱당할 수 있다.)
+	: 전송하는 데이터 길이에 한계가 있다.(브라우저마다 다름 / Chrome 1024byte)
+	: URL을 다른 사용자에게 그대로 공유 가능하다.
+	
+	2) Post방식
+	: URL에 데이터를 노출하지 않고 요청
+	: 패킷의 body 영역(숨겨져있는 영역)에 데이터를 담아서 전송
+	: 전송하는 데이터 길이에 제한이 없다.
+	: 보안에 강함(GET방식보다는!)
+ -->
+	<form action="GetPost" method="post">
+		<table>
+			<tr>
+				<td>ID:</td>
+				<td><input type="text" name="id"></td>
+			</tr>
+			<tr>
+				<td>PW:</td>
+				<td><input type="password" name="pw"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="login"></td>
+			</tr>
+		</table>
+
+		ID2 : <input type="text" name="id2"> <br> PW2 : <input
+			type="text" name="pw2"> <br> <input type="submit"
+			value="login2">
+	</form>
+
+</body>
+</html>
