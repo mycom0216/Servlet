@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <!-- SQL구문을 작성하는 파일 -->
+  <!-- namespace : 각각의 xml 파일안에 있는 mapper 식별자
+  		>>>>>>> 대부분 해당하는 xml파일을 사용하게 될 DAO이름을 명시
+  		>>>>>>> 중복되어서는 안된다
+   -->
+<mapper namespace="com.smhrd.database.MemberDAO">
+  
+	<!-- id : 각각의 쿼리문을 식별할 수 있는 변수값(키값)
+		parameterType : 쿼리문을 실행할 때 받아올 매개변수를 지정
+		>>>>>>>>>>> 클래스명을 지정 시 반드시 패키지명칭까지 붙여줄 것
+	 -->
+  <insert id="join" parameterType="com.smhrd.dto.MemberDTO">
+  
+  
+  	insert into member values(#{name},#{age},#{id},#{pw})
+  
+  
+  </insert>
+  
+</mapper>
+
+ 
